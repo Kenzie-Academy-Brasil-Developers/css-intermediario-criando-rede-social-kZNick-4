@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/navbar.css" />
+    <link rel="stylesheet" href="../../styles/inputs.css" />
+    <title>TechPosters - Rede Social</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-items">
+          <h3>TechPosters</h3>
+          <div class="navbar-links">
+            <a href="#"><button class="navbar-link">Login</button></a>
+            <a href="./pages/resgister/index.html"><button class="navbar-link">Registro</button></a>
+          </div>
+        </div>
+        
+      </nav>
+    </header>
+    <main>
+      <section class="section-principal">
+        <div class="post">
+          <div class="post-header">
+            <img src="../../assets/img/user1.svg" alt="Usuário">
+            <div class="post-title">
+              <h2>Samuel Leão</h2>
+              <p>Front end Engineer</p>
+            </div>
+          </div>
+          <div class="form-post">
+            <form class="form-postar">
+              <input class="form-post-input" type="text" placeholder="Digite o título do post">
+              <textarea class="form-post-textarea" name="" id="" cols="30" rows="8" placeholder="escreva uma mensagem..."></textarea>
+              <button class="btn-postar">Postar</button>
+            </form>        
+          </div>
+          <h2>Posts</h2>
+          <div class="postagens">
+            
+            <div class="post-header">
+              <img src="../../assets/img/user1.svg" alt="Usuário">
+              <div class="post-title">
+                <h2>Samuel Leão</h2>
+                <p>Front end Engineer</p>
+              </div>
+            </div>
+            <div class="post-content">
+              <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+              <p>A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. </p>
+            </div>
+            <div class="post-botoes">
+              <button class="btn-abrir">Abrir Post</button>
+              <img src="../../assets/img/coracao.png" alt="">
+              <span>25</span>
+
+            </div>
+          </div>
+        </div>
+
+        
+        <aside class="div-aside">
+          <div class="sugeridos">
+            <h2>Sugestões para você seguir</h2>
+          </div>
+          <div class="user-sugeridos">
+            <div class="user-img">
+              <img src="../../assets/img/user2.svg" alt="User 2">
+            </div>
+            <div class="user-dados">
+              <h2>Carlos Lima</h2>
+              <p>UX e UI Desginer</p>
+            </div>
+            <div class="user-botoes">
+              <button class="btn-seguir">Seguir</button>
+            </div>
+
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+  <script src="../../script/database/users.js"></script>
+  <script src="../../script/database/posts.js"></script>
+  <script src="../../script/database/sugestUsers.js"></script>
+  <script src="./index.js"></script>
+</html>

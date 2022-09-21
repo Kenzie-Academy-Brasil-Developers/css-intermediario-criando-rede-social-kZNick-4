@@ -1,0 +1,96 @@
+.input-all{
+    width: 100%;
+    height: 50px;
+}
+
+.input-all::placeholder{
+    padding-left: 10px;
+}
+
+.btn-registro {
+    height: 40px;
+    font-weight: bold;
+    background: var(--color-white-fixed);
+    border: 1px solid var(--color-grey-2);
+}
+
+.btn-registro:hover{
+    cursor: pointer;
+}
+
+.btn-logar{
+    height: 40px;
+    color: var(--color-white-fixed);
+    background: var(--color-blue-1);
+    border: 1px solid var(--color-blue-1);
+}
+
+.btn-logar:hover{
+    cursor: pointer;
+}
+
+.btn-voltar{
+
+    position: absolute;
+    right: 0px;
+    width: 60px;
+    height: 30px;
+    font-weight: bold;
+    background: var(--color-white-fixed);
+    border: 1px solid var(--color-grey-2);
+}
+
+.btn-voltar:hover{
+    cursor: pointer;
+}
+
+.form-post-input {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid var(--color-grey-4);
+    padding-left: 10px;
+}
+
+.form-post-input::placeholder{
+    padding-left: 10px;
+}
+
+.form-post-textarea{
+    border-radius: 3px;
+    border: 1px solid var(--color-grey-4);
+    padding: 10px;
+}
+
+.form-post-textarea::placeholder{
+    padding: 10px;
+}
+
+.btn-postar{
+    width: 70px;
+    height: 35px;
+    color: var(--color-white-fixed);
+    background: var(--color-blue-1);
+    border: 1px solid var(--color-blue-1);
+    border-radius: 4px;
+}
+
+.btn-seguir{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    height: 30px;
+    width: 70px;
+    background: var(--color-white-fixed);
+    border: 1px solid var(--color-grey-2);
+}
+
+.btn-abrir{
+    padding: 0px 20px;
+    height: 35px;
+    color: var(--color-white-fixed);
+    background: var(--color-grey-1);
+    border: 1px solid var(--color-grey-1);
+    border-radius: 3px;
+}
