@@ -4,42 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/globalStyles.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/inputs.css" />
-    <title>TechPosters - Home</title>
+    <link rel="stylesheet" href="styles/style home login/globalStyles.css">
+    <link rel="stylesheet" href="styles/style home login/index.css">
+    <link rel="stylesheet" href="styles/style home login/modal.css">
+    <link rel="shortcut icon" href="assets/img/log 2 .png" type="image/x-icon">
+    <title>Kenzie</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="navbar-items">
-          <h3>TechPosters</h3>
-          <div class="navbar-links">
-            <a href="#"><button class="navbar-link">Login</button></a>
-            <a href="./pages/resgister/index.html"><button class="navbar-link">Registro</button></a>
-          </div>
-        </div>
-        
-      </nav>
-    </header>
     <main>
-      <section class="section-principal">
-        <div class="div-login">
-          <form class="form-geral">
-            <h2>Login</h2>
-            <input class="input-all" type="text" placeholder="Seu e-mail">
-            <input class="input-all" type="text" placeholder="Sua senha">
-            <button class="btn-logar" id="btn-logar">Logar</button>
-            <p>Ainda não possui cadastro?</p>
-            <button class="btn-registro" id="btn-registro">Ir para página de registro</button>
-          </form>
-        </div>
+      <!--pagina principal -->
+      <section class="pagina-login">
+          <div class="cart-principal">
+              <img src="assets/img/logo kenzie.png" alt="" class="logo-principal">
+          </div>
+          <div class="cart-secondary">
+              <img src="assets/img/logo3.png" alt="">
+              <h1 class="textos-principal">Kenzie Acadamy</h1>
+              <h2 class="textos-secondary">Inscreva-se na Kenzie hoje mesmo.</h2>
+              <button class="buttoes" data-control-modal="createEmail">Inscreva-se com E-mail</button>
+              <p class="textos linha"> ━━━━━━━ ou ━━━━━━━━━</p>
+              <button class="buttoes Fundo-branco" data-control-modal="createCell">Inscreva-se com Celular</button>
+              <h2 class="textos">Já tem uma conta?</h2>
+              <button class="buttoes Fundo-branco Fundo-trasparente" data-control-modal="login">Entrar</button>
+          </div>
       </section>
-    </main>
+      <!--Inicio do modal -->
+      <section class="modal">
+        <!--modal criar por email -->
+            <div class="modal-create-email " id="createEmail">
+                <div class="modal-conteudo">
+                  <button class="modal-close" data-control-modal="createEmail">x</button>
+                  <img src="assets/img/logo3.png" alt="" class="modal-img">
+                  <h2 class="textos">Criar sua conta</h2>
+                  <input class="input-modal" type="text" placeholder="Seu nome" id="Emailnome" >
+                  <input type="email" placeholder="E-mail" class="input-modal" id="Emailemail" >
+                  <input type="password" placeholder="Digite sua senha" class="input-modal" id="Emailsenha" >
+                  <input class="input-modal" type="text" placeholder="Qual o seu trabalho?" id="Emailtrabalho" >
+                  <input class="input-modal" type="text" placeholder="URL da imagem de perfil" id="Emailimg" >
+                  <button class="modal-butao Fundo-branco" id="criarEmail">Criar conta</button>
+              </div>
+            </div>
+            <!--modal criar por celular -->
+          <div class="modal-create-cell" id="createCell">
+              <div class="modal-conteudo">
+                  <button class="modal-close" data-control-modal="createCell">x</button>
+                  <img src="assets/img/logo3.png" alt="" class="modal-img">
+                  <h2 class="textos">Em manutenção</h2>
+                  <input type="tel" placeholder="Digite seu numero com DD" class="input-modal" >
+                  <input type="password" placeholder="Digite sua senha" class="input-modal">
+                  <input type="password" placeholder="Digite sua senha novamente" class="input-modal">
+
+                  <button class="modal-butao Fundo-branco">Nao Fucionado</button>
+              </div>
+          </div>
+          <!--modal de login-->
+          <div class="modal-login" id="login">
+              <div class="modal-conteudo">
+                  <button class="modal-close" data-control-modal="login">x</button>
+                  <img src="assets/img/logo3.png" alt="" class="modal-img">
+                  <h2 class="textos">Entrar na Kenzie</h2>
+                  <input type="email" placeholder="Celular ou  E-mail" class="input-modal" id="emailLogin">
+                  <input type="password" placeholder="Digite sua senha" class="input-modal" id="senhalogin">
+                  <button class="modal-butao Fundo-branco" id="butaologin">Login</button>
+                  <button class="modal-butao Fundo-trasparente" id="esqueciSenha">Esqueceu sua Senha?</button>
+              </div>
+          </div>
+          <!--modal recuperar senha -->
+          <div class="modal-login" id="recupearsenha">
+              <div class="modal-conteudo">
+                  <button class="modal-close" id="fecharsenha">x</button>
+                  <img src="assets/img/logo3.png" alt="" class="modal-img">
+                  <h2 class="textos">Recupear senha</h2>
+                  <input type="email" placeholder="Celular ou  E-mail" class="input-modal">
+                  <button class="modal-butao Fundo-branco">Enviar nova senha</button>
+              </div>
+          </div>
+      </section>
+  </main>
+  <div></div>
   </body>
-  <script src="./script/database/users.js"></script>
-  <script src="./script/database/posts.js"></script>
-  <script src="./script/database/sugestUsers.js"></script>
-  <script src="./script/database/index.js"></script>
+  <script src="script/Pagina de login/registre.js"></script>
+  <script src="script/Pagina de login/modal.js"></script>
+  <script src="script/database/users.js"></script>
+  <script src="script/database/index.js"></script>
 </html>

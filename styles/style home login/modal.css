@@ -1,0 +1,102 @@
+.modal{
+    display: flex;
+}
+.modal-login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-create-email{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-create-cell{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-conteudo{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.modal-img{
+    width: 50px;
+}
+.input-modal{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 25px;
+    color: white;
+    background-color: transparent;
+    border: solid white 1px;
+}
+.modal-butao{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 25px;
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.Fundo-branco{
+    background-color: white;
+    color: black;
+}
+.Fundo-trasparente{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: solid white 2px;
+    margin-bottom: 25px;
+}
+.modal-close{
+    color: white;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute; 
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.modal-close:hover{
+ background-color: rgba(60, 60, 60, 0.348);
+}
+.modal-on{
+    display: flex;
+}

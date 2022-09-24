@@ -1,16 +1,33 @@
-/* Desenvolva a lógica da página aqui */
-const btnLogar = document.getElementById("btn-logar")
+let listaUser = []
+let userValid = {
+    id:"",
+    user:"",
+    stack:"",
+    img:"",
+    email:"",
+    senha:""
+}
+listaUser = JSON.parse(localStorage.getItem("listaUser"))
 
-btnLogar.addEventListener("click", (event) => {
-    event.preventDefault()
-    window.location.replace("./pages/home/index.html");
-})
+document.getElementById("butaologin").addEventListener("click",function(){
+    let loginEmail = document.getElementById("emailLogin").value
+    let loginSenha = document.getElementById("senhalogin").value
+    function indentificador(data){
+    for(let i = 0; i<data.length;i++){
+        let user = data[i]
+        if(loginEmail == user.email && loginSenha == user.senha){
+            return user
+        }
+    }
+    }
 
-const btnRegistro = document.getElementById("btn-registro")
-
-btnRegistro.addEventListener("click", (event) => {
-    event.preventDefault()
-    window.location.replace("./pages/resgister/index.html");
-})
-
-
+    if(indentificador(listaUser) !== undefined ){
+        alert("Login Valido")
+        let usuarioLogado = indentificador(listaUser)
+        let idUsuario = usuarioLogado.id
+        localStorage.setItem("idLogado",idUsuario)
+        window.location.replace("../../pages/home/index.html")
+    }if(indentificador(users) == undefined){
+        alert("Login Ivalido")
+    }
+});

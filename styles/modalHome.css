@@ -1,0 +1,40 @@
+.modal-post{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+.div-modal{
+    width: 760px;
+    background-color: var(--color-white-fixed);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+.modal-on{
+    display: flex;
+}
+.butao-fechar-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    position: absolute; 
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 5px;
+    color: var(--color-grey-2);
+    background-color: var(--color-grey-3);
+    border-radius: 150px;
+    font-size: 20px;
+}

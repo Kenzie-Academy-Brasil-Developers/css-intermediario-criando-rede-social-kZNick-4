@@ -1,48 +1,19 @@
-.section-principal{
+.section-header{
     padding-top: 130px;
+    display: flex;
     justify-content: center;
-    display: flex;
-    width: 100vw;
-    
+    gap: 20px;
+    width: 100%;
 }
-
-.div-login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    background: var(--color-white-fixed);
-    border-radius: 8px;
-}
-
-.form-geral{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 90%;
-    padding: 40px 0;
-    gap: 1rem;
-}
-
-.form-geral > h2{
-    font-size: 1.5rem;
-}
-
-.form-geral > p {
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.section-principal{
+.section-posts{
+    width: 65%;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
-    width: 60%;
 }
 
 .post{
-    width: 90%;
+    width: 70%;
     margin: 0 20px;
     display: flex;
     flex-direction: column;
@@ -76,7 +47,11 @@
 }
 
 .postagens{
+    display: flex;
+    flex-direction: column;
     padding: 20px 0;
+    gap: 20px;
+
 }
 .post-content{
     display: flex;
@@ -98,6 +73,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 35px;
 }
 
 .post-botoes > img{
@@ -117,11 +93,17 @@
 }
 
 .user-sugeridos{  
-    position: relative;
     display: flex;
-    gap: 1rem;
-    flex-direction: row;
-
+    flex-direction: column;
+    gap: 20px;
+}
+.user-suger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 300px;
+    height: 80px;
 }
 
 .user-img > img{
@@ -132,6 +114,7 @@
 .user-dados {
     display: flex;
     flex-direction: column;
+    width: 200px;
     padding: 5px 0;
     gap: 0.3rem;
 }
@@ -145,4 +128,44 @@
 }
 
 .user-botoes{
+    display: flex;
+    justify-content: end;
+}
+.img-logo{
+    width: 35px;
+}
+.conteudo-post{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.div-sugestoes{
+    width: 30%;
+}
+@media(max-width: 800px){
+    .section-header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /*width: 100vw;*/
+}
+.post{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.div-sugestoes{
+    width: 100%;
+}
+.user-sugeridos{  
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+}
 }

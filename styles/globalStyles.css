@@ -8,6 +8,7 @@
 
 :root{
     --color-blue-1: #4263EB;
+    --color-blue-2: #000058;
     --color-grey-1: #212529;
     --color-grey-2: #495057;
     --color-grey-3: #eeeeee;
@@ -23,9 +24,9 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 0 1rem;
+    width: 100%;
 }
 
 ul{
@@ -34,4 +35,12 @@ ul{
 
 button:hover{
     cursor: pointer;
+}
+@media(max-width: 800px){
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+}  
 }

@@ -1,0 +1,140 @@
+.pagina-login{
+display: flex;
+}
+.textos-principal{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.textos-secondary{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    margin-left: 70px;
+}
+.textos{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 10px 70px;
+}
+.buttoes{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    width: 350px;
+    margin-left: 70px;
+    padding: 10px;
+    margin-top: 25px;
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+}
+.Fundo-branco{
+    background-color: white;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+.Fundo-trasparente{
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: solid white 2px;
+}
+.cart-principal{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    background-image: url(../../assets/img/matrix-2.png);
+    width: 40%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+.cart-secondary{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    width: 60%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+.cart-secondary img{
+    width: 100px;
+    margin: 50px ;
+    max-width: 100%;
+}
+.linha{
+    width: 360px;
+} 
+@media(max-width: 800px){
+
+.pagina-login{
+    display: flex;
+    width: 100%;
+}
+.cart-principal{
+    display: none;
+    justify-content: center;
+    background-color: var(--color-primary);
+    background-image: url(../../assets/img/matrix-2.png);
+    width: 40%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+.cart-secondary{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+.logo-principal{
+    width: 100%;
+    height: 100%;
+}
+.textos-principal{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.cart-secondary img{
+    width: 80px;
+}
+.buttoes{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    width: 300px;
+    margin-left: 50px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+}
+.linha{
+    display: none;
+} 
+}

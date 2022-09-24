@@ -41,3 +41,11 @@ const users = [
     img: "../../assets/img/user6.svg",
   },
 ];
+//teste
+users.push({
+  "id":8,
+  "user":"Nicolas Maques",
+  "stack":"Progamador",
+  "img":"https://media.discordapp.net/attachments/699862598656720946/1022358015862640700/perfil.jpg?width=676&height=676",
+  "email":"Nicolas360@hotmail.com.br",
+  "senha":"12345",})
