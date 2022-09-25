@@ -133,6 +133,7 @@
 }
 .img-logo{
     width: 35px;
+    box-shadow: 0 0 100px 20px rgb(255, 255, 255),inset 0 0 30px 5px hsla(0, 0%, 100%, 0.362);
 }
 .conteudo-post{
     overflow: hidden;

@@ -1,12 +1,5 @@
 let listaUser = []
-let userValid = {
-    id:"",
-    user:"",
-    stack:"",
-    img:"",
-    email:"",
-    senha:""
-}
+
 listaUser = JSON.parse(localStorage.getItem("listaUser"))
 
 document.getElementById("butaologin").addEventListener("click",function(){
@@ -19,15 +12,16 @@ document.getElementById("butaologin").addEventListener("click",function(){
             return user
         }
     }
+}
+if(indentificador(listaUser) !== undefined){
+    document.querySelector(".login-invalido").classList.remove("login-invalido-on")
+    let usuarioLogado = indentificador(listaUser)
+    let idUsuario = usuarioLogado.id
+    localStorage.setItem("idLogado",idUsuario)
+    window.location.replace("../../pages/home/index.html")
+}if(indentificador(listaUser) == undefined){
+    document.querySelector(".login-invalido").classList.add("login-invalido-on")
+        //alert("Login Invalido")
     }
 
-    if(indentificador(listaUser) !== undefined ){
-        alert("Login Valido")
-        let usuarioLogado = indentificador(listaUser)
-        let idUsuario = usuarioLogado.id
-        localStorage.setItem("idLogado",idUsuario)
-        window.location.replace("../../pages/home/index.html")
-    }if(indentificador(users) == undefined){
-        alert("Login Ivalido")
-    }
 });

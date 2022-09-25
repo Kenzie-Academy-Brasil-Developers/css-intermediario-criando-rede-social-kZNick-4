@@ -51,6 +51,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     width: 350px;
+    max-width: 98%;
     height: 50px;
     padding: 10px;
     margin-top: 25px;
@@ -62,6 +63,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     width: 350px;
+    max-width: 98%;
     height: 50px;
     padding: 10px;
     margin-top: 25px;
@@ -84,19 +86,48 @@
 }
 .modal-close{
     color: white;
-    font-size: 25px;
-    background-color: transparent;
+    font-size: 100%;
+    background-color: rgb(11, 11, 11);
     border-radius: 100%;
     position: absolute; 
     right: 0;
     top: 0;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    border: none;
 }
 .modal-close:hover{
  background-color: rgba(60, 60, 60, 0.348);
 }
 .modal-on{
     display: flex;
+}
+.login-invalido{
+    color: rgba(255, 0, 0, 0.603);
+    display: none;
+    font-family: var(--fonte-Ubuntu);
+}
+.login-invalido-on{
+    display: flex;
+}
+
+/*Animaçao Modal modalAnimation*/
+
+.modal-login .modal-conteudo{
+animation: modalAnimation 1s;
+}
+
+.modal-create-email .modal-conteudo{
+    animation: modalAnimation 1s;
+}
+
+.modal-create-cell .modal-conteudo{
+    animation: modalAnimation 1s;
+}
+@media(max-width: 800px){
+.modal-conteudo{
+    width: 90%;
+}
 }

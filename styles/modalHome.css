@@ -15,6 +15,7 @@
     padding: 20px;
     border-radius: 8px;
     position: relative;
+   
 }
 .modal-on{
     display: flex;
@@ -37,4 +38,8 @@
     background-color: var(--color-grey-3);
     border-radius: 150px;
     font-size: 20px;
+}
+/*animaçao modal*/
+.modal-post .div-modal{
+    animation: modalAnimation 1s ;
 }

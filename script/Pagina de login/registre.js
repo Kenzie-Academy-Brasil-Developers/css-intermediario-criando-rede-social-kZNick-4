@@ -13,8 +13,12 @@ document.getElementById("criarEmail").addEventListener("click",function(){
 
    localStorage.setItem('listaUser', JSON.stringify(listaUser))
 
-  //users.push({"id":ids,"user":nome.value,"email":email.value,"senha":senha.value,"stack":trabalho.value,"img":img.value })
   window.location.reload(true)
   document.getElementById("createEmail").classList.toggle("modal-on")
 
 })
+if(localStorage.getItem("idLogado") != undefined){
+  alert("Perfil ja esta logado")
+  window.location.replace("../../pages/home/index.html")
+}
+console.log(localStorage.getItem("idLogado") != undefined)

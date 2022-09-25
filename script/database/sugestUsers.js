@@ -1,5 +1,5 @@
 //ID dos usuários sugeridos para seguir
-const sugestUsers = [3, 7, 6];
+const sugestUsers = [3, 5, 4];
 function usuariosSugeridos(arr){
     for(let i = 0; i<users.length; i++){
     for(let j = 0; j<arr.length; j++){

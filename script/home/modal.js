@@ -5,11 +5,13 @@ btns.forEach((btn) =>
     const modalPost = document.querySelector(".div-modal")
     modalPost.innerHTML = ""
     document.querySelector(".modal-post").classList.toggle("modal-on")
-    for(let i = 0; i<posts.length; i++){
-       let idPost = posts[i].id_post
-       let idUser =posts[i].user
-       for(let j= 0; j<users.length; j++){
-        if(users[j].id == idUser){
+    //criando conteudo do modal
+    function CreanteModal (conteudo,usuario){
+    for(let i = 0; i<conteudo.length; i++){
+       let idPost = conteudo[i].id_post
+       let idUser =conteudo[i].user
+       for(let j= 0; j<usuario.length; j++){
+        if(usuario[j].id == idUser){
              if(idPost == idButao){
                 const modalPost = document.querySelector(".div-modal")
                 const postheader = document.createElement("div")
@@ -34,17 +36,19 @@ btns.forEach((btn) =>
                 postConteudo.appendChild(postConteudoTitle)
                 postConteudo.appendChild(postConteudoparagrafo)
                 modalPost.appendChild(butaoFechar)
-                postConteudoTitle.innerText = posts[i].title
-                postConteudoparagrafo.innerText = posts[i].text
-                nomeuserPost.innerText = users[j].user
-                stackPost.innerText = users[j].stack
-                postPimg.src = users[j].img
+                postConteudoTitle.innerText = conteudo[i].title
+                postConteudoparagrafo.innerText = conteudo[i].text
+                nomeuserPost.innerText = usuario[j].user
+                stackPost.innerText = usuario[j].stack
+                postPimg.src = usuario[j].img
                 butaoFechar.innerText ="x"
                 butaoFechar.addEventListener('click', function(){
                     document.querySelector(".modal-post").classList.toggle("modal-on")
                 }
                 )
         }
-    }}}
+    }}}}
+    CreanteModal (AllPosts,listaUser)
+    CreanteModal (AllPosts,users)
   })
 );
