@@ -43,3 +43,8 @@
 .modal-post .div-modal{
     animation: modalAnimation 1s ;
 }
+@media(max-width: 800px){
+.div-modal{
+    width: 90%;
+}
+}

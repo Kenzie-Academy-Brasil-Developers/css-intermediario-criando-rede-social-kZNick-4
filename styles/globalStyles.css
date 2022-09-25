@@ -13,6 +13,7 @@
     --color-grey-2: #495057;
     --color-grey-3: #eeeeee;
     --color-grey-4: #cfcfcf;
+    --color-grey-5: #e1e1e1fe;
     --color-white-fixed: #ffffff;
     --radius-1: 0.25rem;
     --font-family-1: "Inter", sans-serif;
@@ -20,7 +21,7 @@
 
 body{
     font-family: var(--font-family-1);
-    background: var(--color-grey-3);
+    background: var(--color-grey-5);
 }
 
 .container{
